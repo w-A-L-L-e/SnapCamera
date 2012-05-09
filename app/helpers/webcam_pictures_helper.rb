@@ -1,0 +1,2 @@
+module WebcamPicturesHelper
+end

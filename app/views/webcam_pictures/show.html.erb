@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @webcam_picture.name %>
+</p>
+
+<p>
+  <%= image_tag @webcam_picture.snapshot_url %>
+</p>
+
+
+<%= link_to 'Edit', edit_webcam_picture_path(@webcam_picture) %> |
+<%= link_to 'Back', webcam_pictures_path %>

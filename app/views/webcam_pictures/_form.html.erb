@@ -1,0 +1,28 @@
+<%= form_for @webcam_picture , :html=>{:multipart=>true} do |f| %>
+  <% if @webcam_picture.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@webcam_picture.errors.count, "error") %> prohibited this webcam_picture from being saved:</h2>
+
+      <ul>
+      <% @webcam_picture.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <%= image_tag( @webcam_picture.snapshot_url) if @webcam_picture.snapshot? %>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :snapshot %><br />
+    <%= f.file_field :snapshot %>
+    <%= f.text_field :remote_snapshot_url %>
+    <%= f.hidden_field :snapshot_cache %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
