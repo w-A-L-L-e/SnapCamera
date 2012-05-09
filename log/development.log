@@ -1,1 +1,183 @@
 
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-09 15:28:40 +0200
+Processing by WebcamPicturesController#index as HTML
+  [1m[36mWebcamPicture Load (0.1ms)[0m  [1mSELECT "webcam_pictures".* FROM "webcam_pictures" ORDER BY created_at DESC[0m
+  Rendered webcam_pictures/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 48ms (Views: 27.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-09 15:28:41 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/webcam_pictures.css?body=1" for 127.0.0.1 at 2012-05-09 15:28:41 +0200
+Served asset /webcam_pictures.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-05-09 15:28:41 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-09 15:28:41 +0200
+Served asset /jquery.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-05-09 15:28:41 +0200
+Served asset /posts.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-05-09 15:28:41 +0200
+Served asset /posts.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.webcam.js?body=1" for 127.0.0.1 at 2012-05-09 15:28:41 +0200
+Served asset /jquery.webcam.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/webcam_pictures.js?body=1" for 127.0.0.1 at 2012-05-09 15:28:41 +0200
+Served asset /webcam_pictures.js - 304 Not Modified (1ms)
+
+
+Started GET "/webcam_pictures/new" for 127.0.0.1 at 2012-05-09 15:28:45 +0200
+Processing by WebcamPicturesController#new as HTML
+  Rendered webcam_pictures/_form.html.erb (49.7ms)
+  Rendered webcam_pictures/new.html.erb within layouts/application (80.1ms)
+Completed 200 OK in 101ms (Views: 96.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-05-09 15:28:45 +0200
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-05-09 15:28:45 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-09 15:28:45 +0200
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-09 15:28:45 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/webcam_pictures.css?body=1" for 127.0.0.1 at 2012-05-09 15:28:45 +0200
+Served asset /webcam_pictures.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.webcam.js?body=1" for 127.0.0.1 at 2012-05-09 15:28:45 +0200
+Served asset /jquery.webcam.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-05-09 15:28:45 +0200
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/webcam_pictures.js?body=1" for 127.0.0.1 at 2012-05-09 15:28:45 +0200
+Served asset /webcam_pictures.js - 304 Not Modified (0ms)
+
+
+Started POST "/webcam_pictures" for 127.0.0.1 at 2012-05-09 15:28:57 +0200
+Processing by WebcamPicturesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TjtG2+T/IBfcD0pA9og3pCDbVjcYZS9Z8c+LjU6Mxh0=", "webcam_picture"=>{"name"=>"", "snapshot"=>#<ActionDispatch::Http::UploadedFile:0xa548a80 @original_filename="Screenshot from 2012-05-09 15:27:56.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"webcam_picture[snapshot]\"; filename=\"Screenshot from 2012-05-09 15:27:56.png\"\r\nContent-Type: image/png\r\n", @tempfile=#<File:/tmp/RackMultipart20120509-10840-kmjpts>>, "remote_snapshot_url"=>"", "snapshot_cache"=>""}, "commit"=>"Create Webcam picture"}
+Completed 500 Internal Server Error in 0ms
+
+ActiveModel::MassAssignmentSecurity::Error (Can't mass-assign protected attributes: remote_snapshot_url, snapshot_cache):
+  app/controllers/webcam_pictures_controller.rb:85:in `new'
+  app/controllers/webcam_pictures_controller.rb:85:in `create'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (8.1ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.8ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.6ms)
+
+
+Started POST "/webcam_pictures" for 127.0.0.1 at 2012-05-09 15:30:18 +0200
+Processing by WebcamPicturesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TjtG2+T/IBfcD0pA9og3pCDbVjcYZS9Z8c+LjU6Mxh0=", "webcam_picture"=>{"name"=>"", "snapshot"=>#<ActionDispatch::Http::UploadedFile:0xb5cfa444 @original_filename="Screenshot from 2012-05-09 15:27:56.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"webcam_picture[snapshot]\"; filename=\"Screenshot from 2012-05-09 15:27:56.png\"\r\nContent-Type: image/png\r\n", @tempfile=#<File:/tmp/RackMultipart20120509-10840-ti5er8>>, "remote_snapshot_url"=>"", "snapshot_cache"=>""}, "commit"=>"Create Webcam picture"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "webcam_pictures" ("created_at", "name", "snapshot", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Wed, 09 May 2012 13:30:18 UTC +00:00], ["name", ""], ["snapshot", "Screenshot_from_2012-05-09_15_27_56.png"], ["updated_at", Wed, 09 May 2012 13:30:18 UTC +00:00]]
+  [1m[35m (170.1ms)[0m  commit transaction
+Redirected to http://localhost:4000/webcam_pictures/4
+Completed 302 Found in 183ms (ActiveRecord: 171.1ms)
+
+
+Started GET "/webcam_pictures/4" for 127.0.0.1 at 2012-05-09 15:30:18 +0200
+Processing by WebcamPicturesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mWebcamPicture Load (0.2ms)[0m  [1mSELECT "webcam_pictures".* FROM "webcam_pictures" WHERE "webcam_pictures"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  Rendered webcam_pictures/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 22ms (Views: 20.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-05-09 15:30:18 +0200
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-05-09 15:30:18 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-09 15:30:18 +0200
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/webcam_pictures.css?body=1" for 127.0.0.1 at 2012-05-09 15:30:18 +0200
+Served asset /webcam_pictures.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-09 15:30:18 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.webcam.js?body=1" for 127.0.0.1 at 2012-05-09 15:30:18 +0200
+Served asset /jquery.webcam.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-05-09 15:30:18 +0200
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/webcam_pictures.js?body=1" for 127.0.0.1 at 2012-05-09 15:30:18 +0200
+Served asset /webcam_pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/webcam_pictures" for 127.0.0.1 at 2012-05-09 15:30:34 +0200
+Processing by WebcamPicturesController#index as HTML
+  [1m[35mWebcamPicture Load (0.2ms)[0m  SELECT "webcam_pictures".* FROM "webcam_pictures" ORDER BY created_at DESC
+  Rendered webcam_pictures/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-05-09 15:30:34 +0200
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/webcam_pictures.css?body=1" for 127.0.0.1 at 2012-05-09 15:30:34 +0200
+Served asset /webcam_pictures.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-05-09 15:30:34 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-09 15:30:34 +0200
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-09 15:30:34 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.webcam.js?body=1" for 127.0.0.1 at 2012-05-09 15:30:34 +0200
+Served asset /jquery.webcam.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-05-09 15:30:34 +0200
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/webcam_pictures.js?body=1" for 127.0.0.1 at 2012-05-09 15:30:34 +0200
+Served asset /webcam_pictures.js - 304 Not Modified (0ms)
