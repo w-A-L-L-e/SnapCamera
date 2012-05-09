@@ -121,6 +121,7 @@ Processing by WebcamPicturesController#create as HTML
                                 var base64data  = dataURL.replace(/^data:image\/(png|jpg);base64/, "");
                                 $.post("/webcam_pictures", {type: "data", image: base64data });
                                 pos = 0;
+                                //this can be put somewhere else, for now it's ok...
                         }
                 };
         } else {
@@ -217,7 +218,6 @@ streaming also possible see here : http://www.xarg.org/project/jquery-webcam-plu
             jQuery("#flash").fadeOut("slow", function () {
               jQuery("#flash").css("opacity", 1);
             });
-
           },
           debug: function(type, str) {
             jQuery("#status").html(type + ": " + msg);
