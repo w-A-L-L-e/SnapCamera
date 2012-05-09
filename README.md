@@ -6,7 +6,11 @@ This combines a flash application and some clever jQuery ajax to take live webca
 carrierwave for file and live snapshot uploading.
 
 Tested to work in firefox, chrome and safari. Needs some extra work for IE browsers.
-Posting it now because it is based on a great tutorial found on web and just rubified for my own needs...
+Posting it now because it is based on a great tutorial found on web here :
+ http://www.xarg.org/project/jquery-webcam-plugin/
+
+Just rubified/ror'ed it in few hours for my own needs. Code needs to be cleaned up (put css and javascript into the right files in assets dir). Now it's all contained in
+app/views/webcam_pictures/index.html.erb and the webcam_pictures controller's create action just to see if I could get it to work inside a rails app quickly...
 
 Need some work for browsers that don't have a canvas or getElementById (like IE).
 Apart from that it's really fun and easy to use. Take an instant snapshot or one in 3 seconds delay live from your cam and have it uploaded in one go to your webserver ;).
