@@ -1,0 +1,21 @@
+
+<h1>Listing webcam_pictures</h1>
+<% webcam_pictures.each do |webcam_picture| %>
+  <% if webcam_picture.snapshot %>
+      <div class="picture">
+        <div class="picture_image">
+          <%= image_tag webcam_picture.snapshot_url %>
+        </div>
+        <div class="picture_name">
+          <%= webcam_picture.name %>
+        </div>
+        <div class="edit_picture">
+          <%= link_to 'Show', webcam_picture %>
+          <%= link_to 'Edit', edit_webcam_picture_path(webcam_picture) %>
+          <%= link_to 'Destroy', webcam_picture, confirm: 'Are you sure?', method: :delete %>
+        </div>
+      </div>
+  <% end %>
+<% end %>
+
+
